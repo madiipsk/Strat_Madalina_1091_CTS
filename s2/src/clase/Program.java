@@ -5,11 +5,11 @@ import java.util.List;
 
 public class Program {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws FileNotFoundException {
 		List<Aplicant> listaAngajati;
-		Reader reader=new AngajatReader();
+		Reader reader=new AngajatReader("angajati.txt");
 		try {
-			listaAngajati = reader.readAplicants("angajati.txt");
+			listaAngajati = reader.readAplicants();
 			for(Aplicant angajat:listaAngajati)
 				System.out.println(angajat.toString());
 		} catch (FileNotFoundException e) {

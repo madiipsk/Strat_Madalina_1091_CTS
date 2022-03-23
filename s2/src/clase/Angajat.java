@@ -18,8 +18,8 @@ public class Angajat extends Aplicant{
 	public void setSalariu(int salariu) {
 		this.salariu = salariu;
 	}
-	public Angajat(String nume, String prenume, int varsta, int punctaj, int nr_proiecte, String[] denumire_Proiecte,int salariu,String ocupatie) {
-		super(nume,prenume,varsta,punctaj,nr_proiecte,denumire_Proiecte);
+	public Angajat(String nume, String prenume, int varsta, int punctaj, int nrProiecte, String[] denumireProiecte,int salariu,String ocupatie) {
+		super(nume,prenume,varsta,punctaj,nrProiecte,denumireProiecte);
 		this.salariu = salariu;
 		this.ocupatie = ocupatie;
 	}
@@ -32,7 +32,7 @@ public class Angajat extends Aplicant{
 	@Override
 	public String toString() {
 		return "Angajat: Nume=" + nume + ", Prenume=" + prenume
-				+ ", Varsta=" + varsta + ", Punctaj=" + punctaj + ", Nr_proiecte=" + nrProiecte + ", DenumireProiect="
+				+ ", Varsta=" + varsta + ", Punctaj=" + punctaj + ", Numar Proiecte=" + nrProiecte + ", DenumireProiect="
 				+ Arrays.toString(denumireProiect) + "Ocupatie=" + ocupatie + ", salariu=" + salariu;
 	}
 

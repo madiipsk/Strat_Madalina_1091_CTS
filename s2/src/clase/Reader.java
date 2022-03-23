@@ -4,5 +4,5 @@ import java.io.FileNotFoundException;
 import java.util.List;
 
 public interface Reader {
-    public List<Aplicant> readAplicants(String file) throws FileNotFoundException;
+    public List<Aplicant> readAplicants() throws FileNotFoundException;
 }

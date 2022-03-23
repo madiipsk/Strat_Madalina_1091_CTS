@@ -22,18 +22,14 @@ public abstract class Aplicant{
 	public void setPrenume(String prenume) {
 		this.prenume = prenume;
 	}
-	public int getVarsta() {
-		return varsta;
-	}
+
 	public void setVarsta(int varsta) {
 		this.varsta = varsta;
 	}
 	public void afiseazaStatus(){
 		System.out.println("Aplicantul "+nume+" "+prenume+(punctaj>=pragPunctaj ? "" : "nu")+" a fost acceptat.");
 	}
-	public int getPunctaj() {
-		return punctaj;
-	}
+
 	public void setPunctaj(int punctaj) {
 		this.punctaj = punctaj;
 	}
@@ -55,9 +51,7 @@ public abstract class Aplicant{
 		this.nrProiecte = nrProiecte;
 		this.denumireProiect = denumireProiect;
 	}
-	public int getNrProiecte() {
-		return nrProiecte;
-	}
+
 	public void setDenumiriProiecte(int nrProiecte,String[] denumiri) {
 		this.nrProiecte = nrProiecte;
 		denumireProiect=new String[nrProiecte];
@@ -69,5 +63,6 @@ public abstract class Aplicant{
 	public void afiseazaFinantarePeZi(int sumaPeZi) {
 		System.out.println("Aplicantul "+getNume()+" "+getPrenume()+" primeste "+sumaPeZi+" Euro/zi in proiect.");
 	}
+
 
 }
