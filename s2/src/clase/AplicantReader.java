@@ -13,9 +13,9 @@ public abstract class AplicantReader implements Reader{
     public void readAplicant(Scanner scanner,Aplicant aplicant) {
         String nume = scanner.next();
         String prenume = scanner.next();
-        int varsta = scanner.nextInt();
-        int punctaj = scanner.nextInt();
-        int nr = scanner.nextInt();
+        Integer varsta = scanner.nextInt();
+        Integer punctaj = scanner.nextInt();
+        Integer nr = scanner.nextInt();
         String[] vect = new String[nr];
         for (int i = 0; i < nr; i++)
             vect[i] = scanner.next();
