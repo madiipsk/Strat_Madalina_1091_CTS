@@ -1,6 +1,5 @@
 package adapter;
 
-import validatorSubteran.ValidatorMetrou;
 import validatorSubteran.ValidatorSubteran;
 import validatorTerestru.ValidatorTerestru;
 
