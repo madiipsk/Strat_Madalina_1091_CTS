@@ -43,5 +43,6 @@ public class Autobuz {
         sb.append(", nrLocuri=").append(nrLocuri);
         sb.append('}');
         return sb.toString();
+
     }
 }

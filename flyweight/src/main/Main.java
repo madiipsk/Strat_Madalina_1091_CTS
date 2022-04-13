@@ -25,5 +25,6 @@ public class Main {
         factory.getLinie(137).afiseazaDescriere(a2);
         l2.afiseazaDescriere(a3);
         functie(factory);
+
     }
 }

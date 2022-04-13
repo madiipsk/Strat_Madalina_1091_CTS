@@ -20,6 +20,7 @@ public class Linie implements AutobuzLinie{
         return nrLinie;
     }
 
+
     @Override
     public String toString() {
         final StringBuffer sb = new StringBuffer("Linie{");

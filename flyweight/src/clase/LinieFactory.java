@@ -10,6 +10,7 @@ public class LinieFactory {
         this.linii=new HashMap<Integer,Linie>();
     }
 
+
     public Linie getLinie(int nrLinie){
         if(linii.containsKey(nrLinie))
             return linii.get(nrLinie);
