@@ -11,4 +11,5 @@ public class Calator implements Observer{
     public Calator(String nume) {
         this.nume = nume;
     }
+
 }

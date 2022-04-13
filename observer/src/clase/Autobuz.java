@@ -32,5 +32,4 @@ public class Autobuz implements Subject{
     public void pleacaDeLaCapat(){
         notify("Autobuzul cu nr "+nrLinie+ " pleaca de la capat");
     }
-
 }

@@ -16,6 +16,7 @@ public class Main {
 
         //a1.notify("Plec de la capat");
         //a1.pleacaDeLaCapat();
+
         a1.dezaboneazaObserver(c2);
         a1.pleacaDeLaCapat();
     }
