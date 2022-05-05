@@ -7,7 +7,7 @@ public class ValidatorMetrou implements ValidatorSubteran{
     }
 
     @Override
-    public void valideazaAboonament() {
+    public void valideazaAbonament() {
         System.out.println("A fost validat abonamentul pentru metrou!");
     }
 }

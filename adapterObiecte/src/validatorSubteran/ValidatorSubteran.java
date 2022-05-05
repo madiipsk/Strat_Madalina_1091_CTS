@@ -2,5 +2,5 @@ package validatorSubteran;
 
 public interface ValidatorSubteran {
     void valideazaCalatorie();
-    void valideazaAboonament();
+    void valideazaAbonament();
 }

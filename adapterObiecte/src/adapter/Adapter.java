@@ -17,6 +17,6 @@ public class Adapter implements ValidatorTerestru {
 
     @Override
     public void valideazaAbonament() {
-        validatorMetrou.valideazaAboonament();
+        validatorMetrou.valideazaAbonament();
     }
 }
