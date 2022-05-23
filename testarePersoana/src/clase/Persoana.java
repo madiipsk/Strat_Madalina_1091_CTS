@@ -1,6 +1,8 @@
 package clase;
 
 
+import exceptii.ExceptieCNPGresit;
+
 import java.util.Calendar;
 import java.util.concurrent.TimeUnit;
 
@@ -33,7 +35,7 @@ public class Persoana implements IPersoana{
 		return "N/A";
 	}
 	
-	public int getVarsta(){
+	public int getVarsta() throws ExceptieCNPGresit {
 		int an=0;
 		if(CNP.charAt(0)=='1'|| CNP.charAt(0)=='2')
 			an=(1900 + Integer.parseInt("" + CNP.charAt(1) + CNP.charAt(2)));
@@ -48,6 +50,9 @@ public class Persoana implements IPersoana{
 		Calendar dataNasterii=Calendar.getInstance();
 		dataNasterii.set(an,luna,zi);
 		Calendar dataCurenta=Calendar.getInstance();
+
+		if(dataNasterii.after(dataCurenta))
+			throw new ExceptieCNPGresit();
 		long varsta_zile=TimeUnit.MILLISECONDS.toDays(Math.abs(dataCurenta.getTimeInMillis()-dataNasterii.getTimeInMillis()));
 		return (int) (varsta_zile/365);				
 	}
