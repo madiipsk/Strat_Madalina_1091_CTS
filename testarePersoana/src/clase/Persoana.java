@@ -57,9 +57,15 @@ public class Persoana implements IPersoana{
 		return (int) (varsta_zile/365);				
 	}
 	
-	public boolean checkCNP(){
+	public boolean checkCNP() throws ExceptieCNPGresit {
 		int s=0;	
 		boolean rezultat = false;
+		if(CNP == null) {
+			throw new NullPointerException();
+		}
+		if(CNP.charAt(0) == '0') {
+			throw new ExceptieCNPGresit();
+		}
 		if(CNP.length()!=13)
 			throw new IllegalArgumentException("CNP-ul nu are lungimea corecta");
 		String number="279146358279";

@@ -7,5 +7,5 @@ public interface IPersoana {
 	
 	public int getVarsta() throws ExceptieCNPGresit;
 	
-	public boolean checkCNP();
+	public boolean checkCNP() throws ExceptieCNPGresit;
 }
